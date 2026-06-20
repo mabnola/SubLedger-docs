@@ -58,6 +58,7 @@
             "root": "subscriptions/index",
             "pages": [
               "subscriptions/adding",
+              "subscriptions/email-import",
               "subscriptions/categories",
               "subscriptions/shared-costs",
               "subscriptions/reminders",
@@ -82,6 +83,7 @@
             "root": "account/index",
             "pages": [
               "account/settings",
+              "account/bookkeeper-access",
               "account/data"
             ]
           },
