@@ -1,0 +1,77 @@
+{
+  "projectType": "saas",
+  "projectName": "SubLedger",
+  "projectDescription": "SubLedger is a privacy-first subscription management app that tracks recurring charges, sends renewal reminders, and calculates your monthly and yearly spend — for free.",
+  "theme": "almond",
+  "primaryColor": "#040404",
+  "lightColor": "#fc3c04",
+  "darkColor": "#f49c7c",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans"
+            ]
+          },
+          {
+            "group": "Managing Subscriptions",
+            "pages": [
+              "subscriptions/adding",
+              "subscriptions/categories",
+              "subscriptions/shared-costs",
+              "subscriptions/reminders"
+            ]
+          },
+          {
+            "group": "Dashboard & Reports",
+            "pages": [
+              "dashboard/overview",
+              "dashboard/spend-summary",
+              "dashboard/reports"
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "pages": [
+              "account/settings",
+              "account/reimbursement",
+              "account/upgrade"
+            ]
+          },
+          {
+            "group": "Privacy & Legal",
+            "pages": [
+              "legal/privacy",
+              "legal/terms"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Track all recurring subscriptions in one place",
+    "Renewal reminders sent 7 days before charges",
+    "Automatic monthly and yearly spend calculations",
+    "Shared cost tracking for family plans and employer reimbursements",
+    "Privacy-first — data never sold or used for ad targeting",
+    "Free tier with no credit card required",
+    "Bookkeeper access and downloadable reports on Business plan"
+  ],
+  "publicApiSurface": [
+    "Add subscription (name, cost, billing cycle, renewal date)",
+    "Assign subscription to family member",
+    "Mark subscription for employer reimbursement",
+    "Set renewal reminder lead time",
+    "View monthly spend summary",
+    "View yearly spend estimate",
+    "Download reports (Business plan)",
+    "Manage account settings"
+  ]
+}

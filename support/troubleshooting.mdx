@@ -1,0 +1,158 @@
+---
+title: Troubleshoot common SubLedger account and app issues
+description: Step-by-step fixes for login problems, missing reminder emails, subscriptions not saving, billing questions, and other common SubLedger issues.
+---
+
+Most issues in SubLedger have a straightforward fix. Work through the relevant section below — each one covers what causes the problem and exactly what to do about it. If none of these resolve your issue, [contact support](/support/contact) and include as much detail as you can.
+
+## Login & account access
+
+<AccordionGroup>
+  <Accordion title="I forgot my password and can't log in" icon="lock">
+    You can reset your password from the SubLedger login screen.
+
+    <Steps>
+      <Step title="Go to the login page">
+        Navigate to [app.mysubledger.com](https://app.mysubledger.com) and click **Forgot password?** below the sign-in button.
+      </Step>
+      <Step title="Enter your account email">
+        Type the email address you used when you created your SubLedger account and click **Send reset link**.
+      </Step>
+      <Step title="Check your inbox">
+        Open the password reset email from SubLedger. If it doesn't appear within a few minutes, check your spam or junk folder.
+      </Step>
+      <Step title="Set a new password">
+        Click the link in the email, enter a new password, and log in.
+      </Step>
+    </Steps>
+
+    <Note>
+      Password reset links expire after 24 hours. If yours has expired, repeat the process to request a new one.
+    </Note>
+  </Accordion>
+
+  <Accordion title="I can't log in even though my password is correct" icon="circle-alert">
+    If you're certain your password is right but login is failing, try these steps in order:
+
+    1. **Clear your browser cache and cookies**, then try logging in again.
+    2. **Try a different browser or an incognito/private window** to rule out a browser extension conflict.
+    3. **Check that caps lock is off** — passwords are case-sensitive.
+    4. **Confirm you're using the right email address** — if you have multiple email accounts, you may be entering credentials for the wrong one.
+
+    If none of these work, [email support](mailto:help@mysubledger.com) with your account email and a description of what you see when you try to log in.
+  </Accordion>
+</AccordionGroup>
+
+## Reminder emails
+
+<AccordionGroup>
+  <Accordion title="My renewal reminder emails are not arriving" icon="bell-off">
+    Reminder emails can fail to arrive for a few common reasons.
+
+    <Steps>
+      <Step title="Check your spam folder">
+        Search for emails from **help@mysubledger.com** in your spam, junk, or promotions folder. If you find them there, mark them as "not spam" so future reminders land in your inbox.
+      </Step>
+      <Step title="Confirm the reminder is enabled">
+        Open the subscription in SubLedger and verify that the reminder toggle is turned on. SubLedger enables reminders by default for every subscription, but they can be turned off manually.
+      </Step>
+      <Step title="Check the renewal date">
+        Reminders are sent 7 days before the renewal date by default. If your renewal date is less than 7 days away, the reminder for this cycle may have already passed.
+      </Step>
+      <Step title="Verify your account email">
+        Go to **Account → Settings** and confirm that the email address shown is the one you check regularly.
+      </Step>
+    </Steps>
+
+    <Tip>
+      To make sure SubLedger emails always reach you, add help@mysubledger.com to your contacts or email whitelist.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="I want to change how far in advance I receive reminders" icon="bell">
+    SubLedger sends reminders 7 days before a renewal by default. To adjust this, open the subscription you want to change, find the **Reminder** setting, and select a different lead time from the dropdown. Changes take effect for the next reminder cycle.
+  </Accordion>
+</AccordionGroup>
+
+## Subscriptions not saving or updating
+
+<AccordionGroup>
+  <Accordion title="A subscription I added disappeared or won't save" icon="database">
+    If a subscription entry vanishes after you save it or after a page refresh, try the following:
+
+    <Steps>
+      <Step title="Check your internet connection">
+        SubLedger requires an active connection to save changes. Verify you're online and try saving again.
+      </Step>
+      <Step title="Reload the page and check again">
+        Occasionally a display glitch can make an entry appear missing. Reload the page — if the subscription was saved successfully, it should reappear.
+      </Step>
+      <Step title="Re-enter the subscription">
+        If the entry is genuinely missing, add it again. Make sure you click **Save** (or the equivalent confirm button) before navigating away.
+      </Step>
+    </Steps>
+
+    <Warning>
+      Do not navigate away from a subscription form before saving. Unsaved changes are discarded when you leave the page.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="How do I cancel (remove) a subscription entry" icon="trash-2">
+    "Canceling" a subscription in SubLedger means removing the entry from your tracked list — it does not cancel the subscription with the provider. To do that, you need to log in to the provider's website directly.
+
+    To remove a subscription entry from SubLedger:
+
+    1. Open the subscription from your dashboard.
+    2. Click **Edit** or the options menu (three dots).
+    3. Select **Delete** and confirm when prompted.
+
+    The entry will be removed from your list and will no longer appear in your spend totals.
+  </Accordion>
+
+  <Accordion title="I need to change the billing cycle on a subscription" icon="refresh-cw">
+    To update a billing cycle (for example, from monthly to annual):
+
+    1. Open the subscription from your dashboard.
+    2. Click **Edit**.
+    3. Change the **Billing cycle** field to the new frequency.
+    4. Update the **Next renewal date** to match the new cycle if needed.
+    5. Click **Save**.
+
+    SubLedger will recalculate your spend summary automatically to reflect the updated cycle.
+  </Accordion>
+</AccordionGroup>
+
+## Billing questions
+
+<AccordionGroup>
+  <Accordion title="I was charged but don't recognize the charge" icon="credit-card">
+    Charges from SubLedger will appear on your statement as **MABLLC** or **Michele A Barard LLC**. If you see a charge you don't recognize:
+
+    1. Check whether you recently upgraded from the Free plan.
+    2. Log in to SubLedger and go to **Account → Billing** to review your plan and payment history.
+    3. If you still don't recognize the charge, [email support](mailto:help@mysubledger.com) with the charge amount and date so we can investigate.
+  </Accordion>
+
+  <Accordion title="How do I update my payment method or billing information" icon="wallet">
+    Go to **Account → Billing** in SubLedger to update your credit card number, expiration date, or billing address. Changes take effect immediately and will apply to the next billing cycle.
+  </Accordion>
+
+  <Accordion title="I want to downgrade or cancel my SubLedger plan" icon="arrow-down-circle">
+    You can change your plan at any time from **Account → Billing → Change plan**. Downgrading to the Free plan stops future charges. Your data is retained.
+
+    If you have trouble changing your plan, [contact support](mailto:help@mysubledger.com) and include your account email.
+  </Accordion>
+</AccordionGroup>
+
+## Still need help?
+
+If none of the above resolved your issue, reach out directly.
+
+<CardGroup cols={2}>
+  <Card title="Email support" icon="mail" href="mailto:help@mysubledger.com">
+    help@mysubledger.com — include your account email and a description of the issue.
+  </Card>
+  <Card title="Phone support" icon="phone" href="tel:6783693348">
+    678.369.3348 — available during business hours (Eastern Time).
+  </Card>
+</CardGroup>

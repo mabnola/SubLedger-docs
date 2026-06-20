@@ -1,0 +1,125 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "willow",
+  "name": "SubLedger",
+  "description": "Track every subscription, avoid surprise renewals, and understand your real monthly spend — free and privacy-first.",
+  "colors": {
+    "primary": "#3A8C66",
+    "light": "#88BFA5",
+    "dark": "#262323"
+  },
+  "favicon": "/images/favicon.ico",
+  "logo": {
+    "light": "/images/subledger-light.svg",
+    "dark": "/images/subledger-dark.svg",
+    "href": "https://www.mysubledger.com"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant"]
+  },
+  "navigation": {
+    "directory": "card",
+    "products": [
+      {
+        "product": "Help Center",
+        "description": "Guides, how-tos, and policies for SubLedger users.",
+        "icon": "life-buoy",
+        "groups": [
+          {
+            "group": "Get Started",
+            "icon": "rocket",
+            "expanded": true,
+            "root": "getting-started/index",
+            "pages": [
+              "getting-started/quickstart",
+              "getting-started/create-account",
+              {
+                "group": "Plans & Billing",
+                "icon": "credit-card",
+                "root": "getting-started/billing/index",
+                "pages": [
+                  "getting-started/billing/compare-plans",
+                  "getting-started/billing/upgrade-downgrade"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Managing Subscriptions",
+            "icon": "list",
+            "expanded": true,
+            "root": "subscriptions/index",
+            "pages": [
+              "subscriptions/adding",
+              "subscriptions/categories",
+              "subscriptions/shared-costs",
+              "subscriptions/reminders"
+            ]
+          },
+          {
+            "group": "Dashboard & Reports",
+            "icon": "bar-chart-2",
+            "expanded": true,
+            "root": "dashboard/index",
+            "pages": [
+              "dashboard/overview",
+              "dashboard/spend-summary",
+              "dashboard/reports"
+            ]
+          },
+          {
+            "group": "Account",
+            "icon": "user",
+            "expanded": true,
+            "root": "account/index",
+            "pages": [
+              "account/settings",
+              "account/reimbursement",
+              "account/data"
+            ]
+          },
+          {
+            "group": "Support & Legal",
+            "icon": "scale",
+            "expanded": true,
+            "root": "support/index",
+            "pages": [
+              "support/contact",
+              "support/troubleshooting",
+              "support/privacy-policy",
+              "support/terms"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Get support",
+        "href": "/support/contact"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Start free",
+      "href": "https://app.mysubledger.com"
+    }
+  },
+  "background": {
+    "decoration": "gradient",
+    "color": {
+      "dark": "#262323"
+    }
+  },
+  "appearance": {
+    "default": "system"
+  }
+}
