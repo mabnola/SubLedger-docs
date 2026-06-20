@@ -45,7 +45,8 @@
                 "root": "getting-started/billing/index",
                 "pages": [
                   "getting-started/billing/compare-plans",
-                  "getting-started/billing/upgrade-downgrade"
+                  "getting-started/billing/upgrade-downgrade",
+                  "getting-started/billing/supporter"
                 ]
               }
             ]
@@ -59,7 +60,8 @@
               "subscriptions/adding",
               "subscriptions/categories",
               "subscriptions/shared-costs",
-              "subscriptions/reminders"
+              "subscriptions/reminders",
+              "subscriptions/email-import"
             ]
           },
           {
@@ -81,6 +83,7 @@
             "pages": [
               "account/settings",
               "account/reimbursement",
+              "account/bookkeeper-access",
               "account/data"
             ]
           },
