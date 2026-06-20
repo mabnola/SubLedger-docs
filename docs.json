@@ -45,7 +45,8 @@
                 "root": "getting-started/billing/index",
                 "pages": [
                   "getting-started/billing/compare-plans",
-                  "getting-started/billing/upgrade-downgrade"
+                  "getting-started/billing/upgrade-downgrade",
+                  "getting-started/billing/supporter"
                 ]
               }
             ]
