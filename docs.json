@@ -59,7 +59,8 @@
               "subscriptions/adding",
               "subscriptions/categories",
               "subscriptions/shared-costs",
-              "subscriptions/reminders"
+              "subscriptions/reminders",
+              "subscriptions/reimbursement"
             ]
           },
           {
@@ -80,7 +81,6 @@
             "root": "account/index",
             "pages": [
               "account/settings",
-              "account/reimbursement",
               "account/data"
             ]
           },
