@@ -58,6 +58,7 @@
             "root": "subscriptions/index",
             "pages": [
               "subscriptions/adding",
+              "subscriptions/email-import",
               "subscriptions/categories",
               "subscriptions/shared-costs",
               "subscriptions/reminders",
