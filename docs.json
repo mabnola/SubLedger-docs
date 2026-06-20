@@ -61,7 +61,7 @@
               "subscriptions/categories",
               "subscriptions/shared-costs",
               "subscriptions/reminders",
-              "subscriptions/email-import"
+              "subscriptions/reimbursement"
             ]
           },
           {
@@ -82,8 +82,6 @@
             "root": "account/index",
             "pages": [
               "account/settings",
-              "account/reimbursement",
-              "account/bookkeeper-access",
               "account/data"
             ]
           },
