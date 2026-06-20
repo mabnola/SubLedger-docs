@@ -21,7 +21,10 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant"]
+    "options": [
+      "view",
+      "assistant"
+    ]
   },
   "navigation": {
     "directory": "card",
