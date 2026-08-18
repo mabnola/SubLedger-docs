@@ -109,6 +109,10 @@
   "navbar": {
     "links": [
       {
+        "label": "Roadmap",
+        "href": "https://app.mysubledger.com/roadmap"
+      },
+      {
         "label": "Get support",
         "href": "/support/contact"
       }

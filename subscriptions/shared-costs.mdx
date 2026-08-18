@@ -1,63 +1,82 @@
 ---
 title: Track shared costs and reimbursements in SubLedger
-description: Record the portion of a family plan you actually pay, or flag subscriptions for employer reimbursement so your spend totals stay accurate.
+description: Record the portion of a family plan you actually pay, or the amount your employer covers, so your spend totals reflect what comes out of your pocket.
 ---
 
-Not every subscription you track is one you pay for entirely yourself. SubLedger lets you record two kinds of shared costs: plans you split with family members, and subscriptions your employer covers. Both approaches keep your spend summary accurate — showing only what you actually pay out of pocket.
-
-## Splitting a plan with family members
-
-If you share a subscription with family members and split the cost, you can record each person's share in SubLedger. This feature is available on the **Family plan**.
+Not every subscription you track is one you pay for entirely yourself. SubLedger lets you record two kinds of cost offsets: amounts covered by people you share a plan with, and amounts covered by your employer. Both keep your spend summary accurate — showing only what you actually pay.
 
 <Info>
-  The Family plan costs $20/month and lets you assign subscriptions to family members and track shared costs. [Compare plans](/getting-started/billing/compare-plans) to see if it's right for you.
+  Both work the same way underneath: you record a name and a dollar amount, and SubLedger subtracts it from the subscription's cost. Your spend totals use the remainder — your **effective cost**.
 </Info>
 
+## Splitting a plan with others
+
+If you share a subscription and split the cost, you can record each person's contribution. This feature is available on the **Family plan and above**.
+
 <Steps>
-  <Step title="Open the subscription">
-    From your dashboard, click the subscription you want to split — for example, a family streaming plan or a shared cloud storage account.
+  <Step title="Open the subscription for editing">
+    From your dashboard, open the subscription's action menu and choose **Edit Details** — for example, a family streaming plan or a shared cloud storage account.
   </Step>
-  <Step title="Enable shared cost tracking">
-    In the detail panel, toggle on **Shared cost**. A section expands to show family member fields.
+  <Step title="Expand Shared with others">
+    On the form, click the **Shared with others** section to expand it.
   </Step>
-  <Step title="Assign family members">
-    Add each family member by name and enter their share of the cost. You can enter shares as a fixed amount or as a percentage of the total.
+  <Step title="Add contributors">
+    Click **Add contributor**, then enter the person's name and the dollar amount they cover. Repeat for each person sharing the cost.
   </Step>
   <Step title="Save">
-    Click **Save**. SubLedger records each person's share and shows your net cost — the amount you're personally responsible for — in your spend summary.
+    Click **Save**. SubLedger subtracts the contributions from the subscription's cost and uses the remainder in your spend summary.
   </Step>
 </Steps>
 
-<Tip>
-  Your spend summary always reflects your personal share, not the full plan cost. If you pay $5 of a $15 family plan, SubLedger counts $5 toward your monthly total.
-</Tip>
+<Note>
+  Contributions are entered as **fixed dollar amounts**, not percentages. For a $15 plan split three ways, enter two contributors at $5.00 each — SubLedger then counts $5.00 as your share.
+</Note>
+
+<Warning>
+  You can add up to **6 contributors** per subscription. Once you reach the limit, the **Add contributor** button is disabled.
+</Warning>
 
 ---
 
 ## Tracking subscriptions for employer reimbursement
 
-If your employer reimburses you for a work-related subscription, you can flag it in SubLedger so it's excluded from your personal out-of-pocket totals. This feature is available on the **Personal plan and above**.
-
-<Info>
-  The Personal plan costs $10/month. Employer reimbursement tracking is included on Personal, Family, and any higher-tier plans. [Compare plans](/getting-started/billing/compare-plans) for details.
-</Info>
+If your employer reimburses you for a work-related subscription, record the amount they cover so it's excluded from your out-of-pocket totals. This feature is available on the **Personal plan and above**.
 
 <Steps>
-  <Step title="Open the subscription">
-    From your dashboard, click the subscription your employer covers — for example, a cloud storage plan or a software tool for work.
+  <Step title="Open the subscription for editing">
+    From your dashboard, open the subscription's action menu and choose **Edit Details**.
   </Step>
-  <Step title="Mark as reimbursable">
-    In the detail panel, toggle on **Employer reimbursement**. Optionally, enter a note to remind yourself of the reimbursement policy or approval status.
+  <Step title="Expand Employer reimbursement">
+    On the form, click the **Employer reimbursement** section to expand it.
+  </Step>
+  <Step title="Enter the employer and amount">
+    Enter your employer's name and the dollar amount they cover. If they cover the full cost, enter the full amount.
   </Step>
   <Step title="Save">
-    Click **Save**. The subscription is tagged as reimbursable in your list and is separated from your personal spend in the dashboard summary.
+    Click **Save**. The reimbursed amount is subtracted from the subscription's cost in your spend summary.
   </Step>
 </Steps>
 
 <Note>
-  Reimbursable subscriptions still appear in your full subscription list. SubLedger separates them visually and excludes them from your personal out-of-pocket totals — they don't disappear from your view.
+  Each subscription can have **one** employer reimbursement, and it can be combined with shared contributors on the same subscription. Reimbursed subscriptions stay fully visible in your list — only the amount counted toward your spend changes.
 </Note>
 
 <Warning>
   SubLedger tracks what you tell it. It doesn't connect to your employer's reimbursement system or verify approval status. Keep your own records for reimbursement claims.
 </Warning>
+
+---
+
+## How offsets affect your totals
+
+For each subscription, SubLedger calculates:
+
+```
+effective cost = subscription cost − shared contributions − employer reimbursement
+```
+
+The result is never negative — if offsets exceed the cost, the effective cost is $0. Your monthly and yearly spend estimates are built from effective costs, so they always reflect what you personally pay.
+
+<Tip>
+  On the Business plan, reports show full cost, total offsets, and effective cost as separate columns — useful when you need to show both the sticker price and your share.
+</Tip>

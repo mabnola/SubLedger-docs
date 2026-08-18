@@ -1,17 +1,42 @@
 ---
 title: Set up renewal reminders for your subscriptions
-description: SubLedger sends a reminder email 7 days before each subscription renews. Learn how to adjust the lead time and what the reminder includes.
+description: Turn on renewal reminder emails in SubLedger and choose how many days before a renewal you want to hear about it.
 ---
 
-Renewal reminders help you avoid surprise charges. SubLedger sends you an email before each subscription's billing date so you have time to cancel, adjust, or simply budget for the upcoming charge. By default, reminders go out 7 days in advance — but you can change that lead time to suit how you like to manage your finances.
+Renewal reminders help you avoid surprise charges. When they're switched on, SubLedger emails you before each subscription's billing date so you have time to cancel, adjust, or simply budget for the upcoming charge.
+
+<Warning>
+  Renewal reminder emails are **off by default**. You need to turn them on once in your profile — see [Turn on renewal reminders](#turn-on-renewal-reminders) below. Until you do, SubLedger won't email you about upcoming charges.
+</Warning>
 
 ## How reminders work
 
-SubLedger schedules a reminder automatically for every subscription you add. You don't need to set anything up manually. As long as a subscription has a renewal date, a reminder is on the calendar.
+Renewal reminders are a single account-wide setting. Once you switch them on, SubLedger emails you about every active subscription that has a renewal date coming up, using the lead time you chose. There's nothing to configure per subscription.
 
 <Note>
-  Reminders are sent to the email address associated with your SubLedger account. Make sure your email is current in [Account settings](/account/settings).
+  Reminders are sent to the email address associated with your SubLedger account. Make sure your email is current in your [profile](/account/settings).
 </Note>
+
+## Turn on renewal reminders
+
+<Steps>
+  <Step title="Open your profile">
+    Sign in at [app.mysubledger.com](https://app.mysubledger.com) and click **Profile** in the top navigation.
+  </Step>
+  <Step title="Find Renewal Reminders">
+    Scroll to the **Renewal Reminders** card.
+  </Step>
+  <Step title="Switch on email reminders">
+    Toggle **Email reminders** on. Your change saves immediately — there's no separate save button.
+  </Step>
+  <Step title="Choose your lead time">
+    Once reminders are on, a **Remind me** dropdown appears. Choose how far ahead you want to be notified: **1 day**, **3 days**, **7 days**, **14 days**, or **30 days** before the renewal date. The default is 7 days.
+  </Step>
+</Steps>
+
+<Tip>
+  If most of your subscriptions bill annually, consider a longer lead time — 14 or 30 days — so you have room to decide whether a renewal is still worth it before the full yearly charge lands.
+</Tip>
 
 ## What the reminder email contains
 
@@ -20,65 +45,21 @@ Each reminder email includes:
 - The **subscription name**
 - The **renewal amount** and billing cycle
 - The **renewal date**
-- A direct link to view or edit the subscription in SubLedger
 
-The email gives you everything you need to decide whether to keep, cancel, or modify the subscription before the charge goes through.
+Reminders are sent from **noreply@reminders.mysubledger.com**. Add that address to your contacts so reminders don't end up in spam.
 
-## How to adjust your reminder lead time
+## Changing or turning off reminders
 
-The default lead time is **7 days before the renewal date**. You can change this globally for all subscriptions, or override it for individual subscriptions.
+Your lead time and the on/off switch both live in the same **Renewal Reminders** card on your profile. Changes apply to all future reminders across every subscription.
 
-### Change the default lead time for all subscriptions
-
-<Steps>
-  <Step title="Go to Account settings">
-    Click your profile icon in the top-right corner of the dashboard, then select **Settings**.
-  </Step>
-  <Step title="Open Notifications">
-    Select the **Notifications** tab in your account settings.
-  </Step>
-  <Step title="Adjust the reminder lead time">
-    Under **Renewal reminders**, change the **Days before renewal** value to your preferred number of days. You can set any value from 1 to 30 days.
-  </Step>
-  <Step title="Save">
-    Click **Save changes**. The new lead time applies to all future reminders.
-  </Step>
-</Steps>
-
-### Override the lead time for a single subscription
-
-<Steps>
-  <Step title="Open the subscription">
-    From your dashboard, click the subscription you want to adjust.
-  </Step>
-  <Step title="Set a custom reminder">
-    In the detail panel, find **Renewal reminder** and toggle on **Custom reminder**. Enter the number of days before the renewal date you'd like to be notified.
-  </Step>
-  <Step title="Save">
-    Click **Save**. This subscription will use its own lead time instead of your account default.
-  </Step>
-</Steps>
-
-<Tip>
-  For annual subscriptions, consider setting a longer lead time — 14 or 30 days — so you have more time to evaluate whether the subscription is still worth renewing before the full yearly charge hits.
-</Tip>
-
-## Disabling reminders for a subscription
-
-If you don't want a reminder for a specific subscription, you can turn it off without deleting the subscription.
-
-<Steps>
-  <Step title="Open the subscription">
-    Click the subscription name from your dashboard.
-  </Step>
-  <Step title="Disable the reminder">
-    In the detail panel, toggle off **Renewal reminder**.
-  </Step>
-  <Step title="Save">
-    Click **Save**. SubLedger will no longer send reminder emails for this subscription.
-  </Step>
-</Steps>
+<Note>
+  The lead time is account-wide — it applies to all of your subscriptions at once. SubLedger doesn't currently support a different reminder setting for individual subscriptions, or switching reminders off for one subscription while leaving them on for the rest.
+</Note>
 
 <Warning>
-  Disabling a reminder doesn't cancel the subscription — it only stops the notification. You're still responsible for managing the subscription directly with the provider.
+  Turning off reminders doesn't cancel anything — it only stops the emails. You're still responsible for managing each subscription directly with the provider.
 </Warning>
+
+## Not receiving reminders?
+
+If reminders are switched on but emails aren't arriving, see [troubleshooting](/support/troubleshooting#reminder-emails).
