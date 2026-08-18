@@ -1,45 +1,61 @@
 ---
 title: "Spend summary: monthly and yearly cost estimates"
-description: "See how SubLedger calculates your monthly and yearly subscription spend, and how those totals update automatically as you add or edit subscriptions."
+description: "See how SubLedger converts every billing cycle to a monthly equivalent, how offsets change your totals, and what's excluded from your spend summary."
 ---
 
-The spend summary gives you an honest picture of what your subscriptions actually cost. SubLedger adds up every active subscription and presents a **monthly total** and a **yearly estimate** so you can budget with confidence — not guesswork.
+The spend summary gives you an honest picture of what your subscriptions actually cost. SubLedger converts every active subscription to a monthly equivalent and adds them up, showing a **Monthly Spend** total and a **Yearly Estimate** at the top of your dashboard.
 
 ## How SubLedger calculates your totals
 
-SubLedger converts every subscription to a monthly cost and sums them together to produce your monthly total.
+Every subscription is converted to a monthly equivalent based on its billing cycle:
 
-- **Monthly billing** — the amount you pay each month is counted directly.
-- **Annual billing** — the annual charge is divided by 12 to give a monthly equivalent.
+| Billing cycle | Monthly equivalent |
+|---------------|--------------------|
+| Weekly | cost × 4.33 |
+| Every 4 weeks | cost × 13 ÷ 12 |
+| Monthly | cost |
+| Quarterly | cost ÷ 3 |
+| Yearly | cost ÷ 12 |
 
-Your yearly estimate is then derived from your monthly total, giving you a projected full-year cost based on your current subscriptions.
+Your **Monthly Spend** is the sum of those monthly equivalents. Your **Yearly Estimate** is that monthly total multiplied by 12.
 
 <Note>
   The yearly estimate assumes your current subscriptions remain unchanged. If you cancel or add a subscription mid-year, your actual annual spend will differ from the estimate.
 </Note>
 
-## How totals update
+## Spending breakdown by billing cycle
 
-Your spend totals update immediately whenever you:
-
-- **Add a subscription** — the new amount is included in both totals right away.
-- **Edit a subscription** — changing the price, billing cycle, or status recalculates your totals instantly.
-- **Remove a subscription** — the cost is removed from your totals as soon as you delete the entry.
-
-You never need to refresh or recalculate manually. The numbers you see on the dashboard always reflect your current subscription list.
-
-## Employer reimbursements and shared costs
-
-If you mark subscriptions for employer reimbursement or split costs with family members, SubLedger adjusts your totals to show what you're personally responsible for — not the full sticker price.
+Below your totals, the dashboard shows a **spending breakdown** grouping your subscriptions by billing cycle — weekly, every 4 weeks, monthly, quarterly, and yearly — so you can see how much of your spend is locked into each cadence. Cycles you aren't using are hidden.
 
 <Tip>
-  Marking a subscription as reimbursable means your spend summary reflects your actual out-of-pocket cost. See [employer reimbursement](/subscriptions/reimbursement) for setup instructions.
+  To break your spend down by category instead, use the category filter on the [Reports page](/dashboard/reports) (Business plan).
+</Tip>
+
+## How totals update
+
+Your spend totals update whenever you:
+
+- **Add a subscription** — the new amount is included in both totals right away.
+- **Edit a subscription** — changing the cost, billing cycle, or offsets recalculates your totals.
+- **Delete a subscription** — the cost is removed from your totals.
+- **Cancel a subscription** — cancelled subscriptions stop counting toward your totals.
+
+## Shared costs and employer reimbursements
+
+If you record shared contributions or an employer reimbursement on a subscription, SubLedger subtracts those amounts before converting the cost to a monthly equivalent. Your totals are built from **effective costs** — what you're personally responsible for, not the full sticker price.
+
+If offsets add up to more than the subscription's cost, the effective cost is treated as $0 rather than a negative number.
+
+<Tip>
+  See [shared costs and reimbursements](/subscriptions/shared-costs) for how to record offsets.
 </Tip>
 
 ## What the spend summary does not include
 
-- One-time purchases
-- Subscriptions you've removed from SubLedger
-- Paused subscriptions you've marked as inactive
+- **Cancelled subscriptions** — once a subscription has a cancellation date, it's excluded from your totals and counted separately as cancelled.
+- **Deleted subscriptions** — removed entirely, along with their history.
+- **One-time purchases** — SubLedger tracks recurring charges only.
 
-Only active subscriptions count toward your totals. This keeps your summary accurate and free of noise.
+<Note>
+  There's no separate "paused" state in SubLedger. To stop a subscription counting toward your totals while keeping its record, use **Cancel Sub** from its action menu — you can reactivate it later.
+</Note>

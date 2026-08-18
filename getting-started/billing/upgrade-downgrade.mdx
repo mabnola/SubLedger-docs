@@ -1,36 +1,36 @@
 ---
 title: Upgrade or downgrade your SubLedger plan anytime
-description: Learn how to switch between SubLedger's Free, Personal, Family, and Business plans, and understand how billing changes take effect immediately.
+description: Learn how to switch between SubLedger's Free, Personal, Family, and Business plans, and understand when each change takes effect.
 ---
 
-You can upgrade or downgrade your SubLedger plan at any time from your account settings. Upgrades take effect immediately, giving you instant access to new features. Downgrades take effect at the end of your current billing period so you keep full access through the time you've already paid for.
+You can change your SubLedger plan at any time from the **Pricing** page. Upgrades take effect immediately, giving you instant access to new features. Downgrades take effect at the end of your current billing period, so you keep full access through the time you've already paid for.
+
+<Note>
+  Plan changes are made on the **Pricing** page, reachable from the top navigation or from the **Plan & Billing** card on your Profile page. Payment details themselves are managed in the Stripe billing portal via **Manage billing**.
+</Note>
 
 ## Upgrade your plan
 
 <Steps>
-  <Step title="Open account settings">
-    Sign in to [app.mysubledger.com](https://app.mysubledger.com) and click your account avatar in the top-right corner. Select **Settings** from the dropdown menu.
+  <Step title="Open the Pricing page">
+    Sign in to [app.mysubledger.com](https://app.mysubledger.com) and click **Pricing** in the top navigation. Your current plan is marked, and all plans are listed with their features and pricing.
   </Step>
 
-  <Step title="Go to the Plans & Billing section">
-    In the settings sidebar, select **Plans & Billing**. Your current plan is highlighted, and all available plans are listed alongside their features and pricing.
+  <Step title="Choose monthly or yearly">
+    Use the **Monthly** / **Yearly** toggle above the plan cards to see prices for each billing interval.
   </Step>
 
   <Step title="Select your new plan">
-    Click **Upgrade** on the plan you want to move to. Review the plan details and confirm your choice.
-
-    <Tip>
-      Select **Annual billing** on the next screen to save approximately 17% compared to paying month-to-month.
-    </Tip>
+    Click the upgrade button on the plan you want.
   </Step>
 
-  <Step title="Enter your payment details">
-    Enter your billing information and confirm the upgrade. Your new plan activates immediately and you gain access to all features in that tier right away.
+  <Step title="Complete payment">
+    If this is your first paid plan, you'll be taken to Stripe Checkout to enter your payment details. If you already have a paid plan, the change is applied to your existing subscription right away.
   </Step>
 </Steps>
 
 <Note>
-  When you upgrade mid-cycle, SubLedger calculates a prorated charge for the remainder of your current billing period so you only pay for what you use.
+  When you upgrade mid-cycle, SubLedger prorates the change — you're credited for the unused portion of your current plan and charged for the new one. Your billing date resets to the day of the upgrade.
 </Note>
 
 ---
@@ -38,52 +38,62 @@ You can upgrade or downgrade your SubLedger plan at any time from your account s
 ## Downgrade your plan
 
 <Steps>
-  <Step title="Open account settings">
-    Sign in to [app.mysubledger.com](https://app.mysubledger.com) and navigate to **Settings** → **Plans & Billing**.
+  <Step title="Open the Pricing page">
+    Sign in at [app.mysubledger.com](https://app.mysubledger.com) and click **Pricing** in the top navigation.
   </Step>
 
   <Step title="Select a lower plan">
-    Click **Downgrade** on the plan you want to move to. SubLedger will show you a summary of the features you'll lose at the end of your billing period.
+    Click the downgrade button on the plan you want to move to.
   </Step>
 
-  <Step title="Confirm the downgrade">
-    Review the summary and confirm. Your current plan remains active until the end of your paid billing period. After that, your account switches to the new plan.
+  <Step title="Confirm">
+    Your current plan stays active until the end of the period you've paid for. After that, your account switches to the new plan automatically.
   </Step>
 </Steps>
 
-<Warning>
-  If your downgrade reduces your subscription limit below your current number of tracked subscriptions, you'll need to remove subscriptions before the downgrade takes effect. SubLedger will remind you of this during the confirmation step. Subscriptions over the new limit won't be automatically deleted, but you won't be able to add new ones until you're within the limit.
-</Warning>
+<Tip>
+  A scheduled downgrade appears on both the Pricing page and the **Plan & Billing** card on your Profile, showing the date it takes effect. Changed your mind? Click **Cancel scheduled downgrade** any time before that date and you'll stay on your current plan.
+</Tip>
+
+<Note>
+  Only one pending plan change can be scheduled at a time. Scheduling a new change replaces the previous one.
+</Note>
 
 ---
 
 ## Switching to the free plan
 
-Downgrading to Free follows the same process as any other downgrade. Keep in mind that the free tier supports up to 10 subscriptions, and features like employer reimbursement tracking, family assignment, bookkeeper access, and downloadable reports will no longer be available after the switch.
+Downgrading to Free follows the same process as any other downgrade, and takes effect at the end of your paid period. Keep in mind that the free tier supports up to 10 subscriptions, and features like employer reimbursement tracking, shared costs, subscriber names, bookkeeper access, custom categories, and reports are no longer available after the switch.
+
+<Warning>
+  If you're on the Family or Business plan and have assigned **subscriber names** to subscriptions, check with support before downgrading if you need to keep them — subscriber names are a Family-and-above feature and won't be editable on a lower plan.
+</Warning>
 
 ---
 
-## Switching between monthly and annual billing
+## Switching between monthly and yearly billing
 
-You can switch from monthly to annual billing (or vice versa) from the same **Plans & Billing** settings page without changing your plan tier.
+You can switch billing intervals from the same **Pricing** page without changing your plan tier — use the **Monthly** / **Yearly** toggle, then click the button on your current plan.
 
-- **Monthly to annual:** The annual rate applies at your next renewal date. You'll receive a prorated credit if you switch mid-cycle.
-- **Annual to monthly:** The change takes effect when your current annual period ends.
+Because SubLedger treats any move to a higher-priced option as an upgrade and any move to a lower-priced one as a downgrade:
+
+- **Monthly to yearly:** applies immediately, with proration. Your billing date resets to the day you switch.
+- **Yearly to monthly:** applies at the end of your current annual period.
 
 <Tip>
-  Annual billing saves approximately 17% across all paid plans. If you're confident you'll use SubLedger for the full year, annual billing is the better value.
+  Yearly billing costs less than paying month to month. Flip the **Yearly** toggle on the Pricing page to see the effective monthly rate for each plan before you commit.
 </Tip>
 
 ---
 
 ## What happens if you exceed your plan's subscription limit
 
-If you downgrade to a plan with a lower subscription limit, subscriptions over the new limit become **read-only**. You can still view them, but you won't be able to edit or add new subscriptions until you're within the limit.
+If you downgrade to a plan with a lower subscription limit, the subscriptions over that limit become **locked**. You can still see them, but you can't edit them, and you can't add new subscriptions until you're back under the limit.
 
-SubLedger keeps your oldest subscriptions active and locks the most recently added ones that exceed the limit. A banner appears on your dashboard and subscriptions page with options to upgrade or manage your list.
+SubLedger keeps your oldest subscriptions active and locks the most recently added ones that exceed the limit. Locked entries show a **Locked — over plan limit** badge, and a banner appears on your dashboard with options to upgrade or manage your list.
 
 <Note>
-  Over-limit subscriptions are never deleted automatically. You can regain full access by upgrading your plan or removing subscriptions until you're within the limit.
+  Over-limit subscriptions are never deleted automatically. You can regain full access by upgrading your plan or deleting subscriptions until you're within the limit.
 </Note>
 
 ---
